@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 import { Content } from "../models/content.interface";
 import { Link } from "../models/link.interface";
 
-const CONTENT_PATH = "Contents";
+const CONTENT_PATH = "contents";
 const LINK_PATH = "links";
 @Injectable({
   providedIn: "root",
