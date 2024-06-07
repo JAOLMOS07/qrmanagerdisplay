@@ -3,17 +3,17 @@
   color:gray;
   }
 
-.facebook:hover{
-  color:#2f55a4;
+  .facebook{
+    color:#2f54a4c9;
 }
-.instagram:hover{
-  color:#F56040;
+.instagram{
+  color:#F56040c9;
 }
-.whatsapp:hover{
-  color:#128C7E;
+.whatsapp{
+  color:#128C7Ec9;
 }
-.youtube:hover{
-  color:#c4302b;
+.youtube{
+  color:#c4302bc9;
 }
 
 a{
@@ -24,21 +24,33 @@ a{
 .shadow {
   max-width: 800px;
 }
+.item{
+  border-radius: 30px;
+}
 .container-facebook{
-  border: 1px solid #2f55a4;
+
+  border-bottom-style: solid;
+  border-bottom-color: #2f54a47a;
+
 
 }
 .container-instagram{
-  border: 1px solid #F56040;
+
+  border-bottom-style: solid;
+  border-bottom-color: #F560407a;
+
 
 
 }
 .container-whatsapp{
-  border: 1px solid #128C7E;
+  border-bottom-style: solid;
+  border-bottom-color: #128C7E7a;
+
 
 
 }
 .container-youtube{
-  border: 1px solid #c4302b;
+  border-bottom-style: solid;
+  border-bottom-color: #c4302b7a;
 
 }
