@@ -13,11 +13,19 @@ import { AsyncPipe, CommonModule } from "@angular/common";
 import { Content } from "../../models/content.interface";
 import { Link } from "../../models/link.interface";
 import { IconComponent } from "../components/icon/icon.component";
+import { BasicTemplateComponent } from "../template/basic-template/basic-template.component";
+import { ProfileTemplateComponent } from "../template/profile-template/profile-template.component";
 
 @Component({
   selector: "app-qr-display",
   standalone: true,
-  imports: [AsyncPipe, IconComponent, CommonModule],
+  imports: [
+    AsyncPipe,
+    IconComponent,
+    CommonModule,
+    BasicTemplateComponent,
+    ProfileTemplateComponent,
+  ],
   templateUrl: "./qr-display.component.html",
   styleUrl: "./qr-display.component.css",
 })
@@ -28,22 +36,7 @@ export class QrDisplayComponent implements OnInit {
   public content!: Content;
   public link!: Link;
   public isLoading: boolean = true;
-  getNetworkKeys(networks: Record<string, string>): string[] {
-    return Object.keys(networks);
-  }
 
-  getNetworkUrl(network: string, key: string): string {
-    switch (key.toLowerCase()) {
-      case "facebook":
-        return `https://www.facebook.com/${network}`;
-      case "whatsapp":
-        return `https://wa.me/${network}`;
-      case "youtube":
-        return `https://www.youtube.com/${network}`;
-      default:
-        return network;
-    }
-  }
   getContent(id: string) {
     this.qrService.getContentById(id).subscribe({
       next: (content: Content) => {

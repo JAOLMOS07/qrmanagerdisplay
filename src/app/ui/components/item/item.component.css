@@ -1,0 +1,44 @@
+
+.link{
+  color:gray;
+  }
+
+.facebook:hover{
+  color:#2f55a4;
+}
+.instagram:hover{
+  color:#F56040;
+}
+.whatsapp:hover{
+  color:#128C7E;
+}
+.youtube:hover{
+  color:#c4302b;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.shadow {
+  max-width: 800px;
+}
+.container-facebook{
+  border: 1px solid #2f55a4;
+
+}
+.container-instagram{
+  border: 1px solid #F56040;
+
+
+}
+.container-whatsapp{
+  border: 1px solid #128C7E;
+
+
+}
+.container-youtube{
+  border: 1px solid #c4302b;
+
+}

@@ -1,0 +1,54 @@
+/* Contenedor principal */
+.content-container {
+  padding: 0 15px;
+}
+
+/* Estilos para el logo */
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+  background-color: #0664c3;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el texto */
+.text-center h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.text-center p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Estilos para las imágenes multimedia */
+.multimedia-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.multimedia-image:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor de multimedia */
+.container {
+  padding-top: 20px;
+}

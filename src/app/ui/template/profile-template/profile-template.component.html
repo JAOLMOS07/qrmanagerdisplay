@@ -1,0 +1,31 @@
+@if(content){
+<div class="container-fluid p-0">
+  <div class="cover-photo-container">
+    <img [src]="coverUrl" alt="Cover Photo" class="img-fluid cover-photo" />
+    <div class="profile-photo-container">
+      <img
+        [src]="content.logoUrl"
+        alt="Profile Photo"
+        class="profile-photo img-fluid rounded-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="row text-center texto d-flex justify-content-center align-items-center"
+  >
+    <h1 class="col-12 display-4">{{ content.title }}</h1>
+    <p class="col-12 lead">{{ content.description }}</p>
+    @if(content.networks){
+
+    <app-item
+      class="mx-auto"
+      *ngFor="let network of getNetworkKeys(content.networks)"
+      [name]="network"
+      [link]="content.networks![network]"
+    />
+
+    }
+  </div>
+</div>
+
+}

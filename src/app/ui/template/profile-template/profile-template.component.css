@@ -1,0 +1,65 @@
+.cover-photo-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  min-height: 250px;
+  max-height: 250px;
+
+}
+.texto {
+
+  padding-top:50px;
+padding-top:50px;
+}
+.cover-photo {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.profile-photo-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+@media (min-width: 576px) {
+
+  .profile-photo {
+    width: 260px;
+  height: 260px;
+
+  }
+  .texto {
+
+    padding-top:100px;
+
+  }
+}
+
+@media (min-width: 768px) {
+
+  .profile-photo {
+    width: 320px;
+    height: 320px;
+  }
+  .texto {
+    padding-top:150px;
+
+
+  }
+}

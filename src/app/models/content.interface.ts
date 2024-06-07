@@ -4,6 +4,7 @@ export interface Content {
   description: string;
   logoUrl: string;
   multimedia: string[];
+  template?: string;
   networks?: Record<string, string>;
 }
 export interface Network {

@@ -1,0 +1,37 @@
+@if(content){
+<div class="content-container">
+  <div
+    class="logo-container bg-primary d-flex justify-content-center align-items-center"
+  >
+    <img [src]="content.logoUrl" alt="Logo" class="logo-image img-fluid" />
+  </div>
+  <div class="text-center py-4">
+    <h1 class="display-4">{{ content.title }}</h1>
+    <p class="lead">{{ content.description }}</p>
+    @if(content.networks){
+
+    <app-icon
+      *ngFor="let network of getNetworkKeys(content.networks)"
+      [name]="network"
+      [link]="content.networks![network]"
+    />
+
+    }
+  </div>
+
+  <div class="container mt-2">
+    <div class="row">
+      @for ( media of content.multimedia; track media) {
+      <div class="col-md-6 col-lg-4 mb-3">
+        <img
+          [src]="media"
+          alt="Multimedia"
+          class="img-fluid multimedia-image rounded shadow-sm"
+        />
+      </div>
+      }
+    </div>
+  </div>
+</div>
+
+}
